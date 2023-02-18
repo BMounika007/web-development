@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+            <option value="sport">sport</option>
+            <option value="Coding">Coding</option>
+            <option value="hackathon">hackathon</option>
+            <option value="tedx">tedx</option>
+            <option value="cultural">cultural</option>
+        </select>
+    
+        <label for="attendees">seat number</label>
+        <input type="number" id="attendees" name="attendees" required>
+    </form>
+    <form action="submit.php" method="post">
+        <input type="submit" value="Book Now">
+    </form>
+    
+</body>
+</html>
